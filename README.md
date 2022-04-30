@@ -2,14 +2,17 @@
 Website Portfolio, dynamic website
 
 ## Database
-- ibutang ang tanan text sa database (doing)
+- ibutang tanan text sa database (marked as done)
+- ibutang ang path directory sa image sa database (marked as done)
+
+
 
 ## Job Request Module
 - Webpage design
-- Button na naay mark as done or acknowledged
-- Navigation bar mismo sa jobrequest na page na duha ang view (jobrequests ug acknowledge).
+- Button na naay mark as done or acknowledged (cancelled)
+- Navigation bar mismo sa jobrequest na page na duha ang view (jobrequests ug acknowledge). (cancelled)
 
-## Edit Profile Module
+## Edit Profile Module (working)
 - maka upload ug profile picture
 - maka edit sa about me
 - maka edit sa profile name
