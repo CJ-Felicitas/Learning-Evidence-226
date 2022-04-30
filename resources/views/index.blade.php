@@ -1,3 +1,7 @@
+<?php
+use Illuminate\Support\Facades\DB;
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,7 +55,7 @@
             <br><br><br>
             <div class="row" id="first-row">
                 <div class="col-sm-6 col-md-6 col-lg-6" id="hugeName"><br> <div class="hugeName_container">
-                    <div class="typed-out">Cedrick James Felicitas</div>
+                    <div class="typed-out"><?php $text =  DB::table('textcontents')->where('title', 'name')->first(); echo $text->content; ?></div>
                 </div>
             </div>
 <div class="col-sm-6 col-md-6 col-lg-6"><img src="images/profilepicture.JPG" alt="me"
@@ -70,7 +74,11 @@
                 <div class="col-md-12">
                     
                     <div id="about-right">
-                            Hi, my name is Cedrick James Felicitas a Filipino citizen and a student. I'm currently studying at University of Southeastern Philippines (USeP) and my course is Bachelor of Science in Information Technology major in Information Security. I'm looking forward to learn more about Web Development.
+                           <?php
+                           $text =  DB::table('textcontents')->where('title', 'aboutme')->first();
+                           echo $text->content;
+                           ?>
+
                     </div>
                 </div>
             </div>
@@ -95,7 +103,11 @@
 
                     </div>
 
-                    <p>PHP</p>
+                    <p><?php
+                    $text =  DB::table('textcontents')->where('title', 'skillone')->first();
+                    echo $text->content;
+                    ?>
+                    </p>
 
                 </div>
 
@@ -105,7 +117,10 @@
                         <img src="images/skilltwo.png" alt="" class="card-image">
 
                     </div>
-                    <p>HTML</p>
+                    <p><?php
+                    $text =  DB::table('textcontents')->where('title', 'skilltwo')->first();
+                    echo $text->content;
+                    ?></p>
                 </div>
 
 
@@ -115,20 +130,29 @@
                         <img src="images/skillthree.png" alt="" class="card-image">
 
                     </div>
-                    <p>JAVA</p>
+                    <p><?php
+                    $text =  DB::table('textcontents')->where('title', 'skillthree')->first();
+                    echo $text->content;
+                    ?></p>
                 </div>
                 <div class="col-md-2 space" id="lang">
                     <div class="card-test">
                         <img src="images/skillfour.png" alt="" class="card-image">
                     </div>
-                    <p>CSS</p>
+                    <p><?php
+                    $text =  DB::table('textcontents')->where('title', 'skillfour')->first();
+                    echo $text->content;
+                    ?></p>
 
                 </div>
                 <div class="col-md-2 space" id="lang">
                     <div class="card-test">
                         <img src="images/skillfive.png" alt="" class="card-image">
                     </div>
-                    <p>JAVASCRIPT</p>
+                    <p><?php
+                    $text =  DB::table('textcontents')->where('title', 'skillfive')->first();
+                    echo $text->content;
+                    ?></p>
                 </div>
                 <div class="col-md-1 space">
                     <!--empty space -->
@@ -203,21 +227,30 @@
 <div class="col-md-4">
 <div class="thumbnail" id="fourthbg-container">
 <img src="images/service-1.png" alt="" width="100%">
-<div class="caption" id="caption">Build a Web Application</div>
+<div class="caption" id="caption"><?php
+                    $text =  DB::table('textcontents')->where('title', 'service-1')->first();
+                    echo $text->content;
+                    ?></div>
 </div>
 </div>
 
 <div class="col-md-4">
     <div class="thumbnail" id="fourthbg-container">
     <img src="images/service-2.png" alt="" width="100%">
-    <div class="caption" id="caption">MySQL Database</div>
+    <div class="caption" id="caption"><?php
+                    $text =  DB::table('textcontents')->where('title', 'service-2')->first();
+                    echo $text->content;
+                    ?></div>
     </div>
     </div>
 
     <div class="col-md-4">
         <div class="thumbnail" id="fourthbg-container">
         <img src="images/service-3.png" alt="" width="100%">
-        <div class="caption" id="caption">Problem Solving</div>
+        <div class="caption" id="caption"><?php
+                    $text =  DB::table('textcontents')->where('title', 'service-3')->first();
+                    echo $text->content;
+                    ?></div>
         </div>
         </div>
 
@@ -231,7 +264,10 @@
             <h1><b>Contact</b></h1> 
             <br>
             <div class="col-md-6">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type spsecimen book
+            <?php
+                    $text =  DB::table('textcontents')->where('title', 'contact')->first();
+                    echo $text->content;
+                    ?>
             <br><br>
             </div>
   

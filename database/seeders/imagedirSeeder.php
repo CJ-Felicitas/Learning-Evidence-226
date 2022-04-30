@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Note: The reason this seeder is created is to seed * the "dir" table.
+ * Note: The reason this seeder is created is to seed the "dir" table.
  * 
  * -default images for my website portfolio
  * 

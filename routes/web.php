@@ -21,3 +21,4 @@ Route::get('/', function () {
 Route::post('/jobrequest', [jobrequesthandler::class, 'sendrequest']); //contact form
 Route::get('/admin', [dashboardhandler::class, 'index']);
 Route::view('/viewrequest','jobrequest');
+Route::view('/editprofile','editprofile');

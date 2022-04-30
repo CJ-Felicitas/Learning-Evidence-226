@@ -1,0 +1,27 @@
+#first-row{
+    margin-top: 100px;
+}
+#profile-side{
+    border: 1px solid black;
+    padding: 15px;
+}
+#profile-side-container{
+    padding: 10px;
+    border: 1px solid black;
+}
+#profile-side-container img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#profile-side-container h4{
+    text-align: center;
+}
+#statsside{
+    border: 1px solid black;
+    padding: 15px;
+}
+#stat-container{
+    border: 1px solid black;
+    padding: 10px;
+}

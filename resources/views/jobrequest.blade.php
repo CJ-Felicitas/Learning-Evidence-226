@@ -23,7 +23,7 @@ use Illuminate\Support\Facades\DB;
             <table class="table">
                 <thead>
                     <tr>
-                        <th>ID</th>
+                   
                         <th>Name</th>
                         <th>Email</th>
                         <th>Phone Number</th>
@@ -34,7 +34,7 @@ use Illuminate\Support\Facades\DB;
                 $requests = DB::select('select * from jobrequests');
                   foreach ($requests as $req) {
                     echo " <tbody>
-                                <th scope='row'>$req->id</th>
+                                
                                 <td>$req->name</td>
                                 <td>$req->email</td>
                                 <td>$req->phonenumber</td>
