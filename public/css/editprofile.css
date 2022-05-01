@@ -1,27 +1,64 @@
-#first-row{
-    margin-top: 100px;
+
+* {
+    font-family: 'Rubik', sans-serif;
+    color: black;
 }
-#profile-side{
-    border: 1px solid black;
+#body{
+    background-color: rgb(177, 177, 177);
+    
+}
+#breadcrumb{
+    margin-top: 110px;
+    margin-bottom: 10px;
+}
+
+#container{
+background-color: rgb(255, 255, 255);
+border-radius: 10px;
+}
+
+
+#first-row {
+  
+}
+
+#profile-side {
+ 
     padding: 15px;
 }
-#profile-side-container{
+
+#profile-side-container {
     padding: 10px;
-    border: 1px solid black;
+
 }
-#profile-side-container img{
+
+#profile-side-container img {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-#profile-side-container h4{
+
+#profile-side-container h3 {
     text-align: center;
 }
-#statsside{
-    border: 1px solid black;
+
+#statsside {
+    
     padding: 15px;
 }
-#stat-container{
-    border: 1px solid black;
+
+#stat-container {
+  
     padding: 10px;
+}
+
+#social-media-side {
+    padding: 15px;
+}
+
+#social-media-side-container {
+    padding: 10px;
+}
+#bio{
+    text-align: justify;
 }

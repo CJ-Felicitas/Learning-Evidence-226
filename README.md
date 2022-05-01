@@ -20,3 +20,8 @@ Website Portfolio, dynamic website
 - maka edit sa currently learning
 - maka edit sa note sa contact me
 - (i merge nalang ang page sa edit skills sa edit profile na module)
+
+
+## start issues
+### di ma open ang site pag wa pay database
+- butngan ug auto create db, tables and data sa index page.

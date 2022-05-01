@@ -1,29 +1,14 @@
- <table class="table">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Phone Number</th>
-                        </tr>
-                    </thead>
+<h4>Social Media Accouns: </h4>
+                    <h5>Github: <?php
+                                $text =  DB::table('textcontents')->where('title', 'socialmedialinkthree')->first();
+                                echo $text->content;
+                                ?> </h5>
+                    <h5>Facebook: <?php
+                                    $text =  DB::table('textcontents')->where('title', 'socialmedialinkone')->first();
+                                    echo $text->content;
+                                    ?> </h5>
+                    <h5>LinkedIn: <?php
+                                    $text =  DB::table('textcontents')->where('title', 'socialmedialinktwo')->first();
+                                    echo $text->content;
+                                    ?> </h5>
                
-                          <?php
-                          
-                          $requests = DB::select('select * from jobrequests');
- 
-                          foreach ($requests as $req) {
-                          echo " <tbody>
-                                <th scope='row'>$req->id</th>
-                                <td>$req->name</td>
-                                <td>$req->email</td>
-                                <td>$req->phonenumber</td>
-                                </tbody>
-                                ";
-                          }
-                          ?>
-                   
-
-                </table>
-            <!--  -->
-            
